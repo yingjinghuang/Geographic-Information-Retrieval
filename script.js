@@ -39,14 +39,15 @@ function sidebar(activeWeek) {
     if (hiddenWeeks.has(n)) return '';
     return `<a href="week${n}.html" class="${activeWeek === n ? 'active' : ''}"><span>W${n}</span>${w[0]}</a>`;
   }).join('');
+  const isProjectProposal = document.body.dataset.page === 'project-proposal';
   const isFinalProject = document.body.dataset.page === 'final-project';
   return `<aside class="sidebar" id="sidebar"><div class="sidebar-header">
     <img src="img/uni_logo.png" alt="University of Vienna" class="sidebar-logo">
     <h2>${course.title}</h2>
     <div class="semester">${course.semester} · University of Vienna</div></div>
-    <nav><div class="nav-title">Overview</div><a href="index.html" class="nav-home ${!activeWeek && !isFinalProject ? 'active' : ''}">Home</a>
+    <nav><div class="nav-title">Overview</div><a href="index.html" class="nav-home ${!activeWeek && !isProjectProposal && !isFinalProject ? 'active' : ''}">Home</a>
     <div class="nav-title">Lectures &amp; Labs</div><div class="week-nav">${links}</div>
-    <div class="nav-title">Course Project</div><div class="week-nav"><a href="final-project.html" class="${isFinalProject ? 'active' : ''}"><span>FP</span>Final Project</a></div></nav></aside><div class="backdrop" id="backdrop"></div>`;
+    <div class="nav-title">Course Project</div><div class="week-nav"><a href="project-proposal.html" class="${isProjectProposal ? 'active' : ''}"><span>PP</span>Project Proposal</a><a href="final-project.html" class="${isFinalProject ? 'active' : ''}"><span>FP</span>Final Project</a></div></nav></aside><div class="backdrop" id="backdrop"></div>`;
 }
 
 function shell() {
