@@ -11,5 +11,3 @@ Student-facing static course website for *Geographic Information Retrieval*.
 - `slides/` — published lecture slides
 - `code/weekN/` — published lab notebooks and supporting files
 - `img/` — website assets
-
-The GitHub repository is the canonical published copy for students. Working files may also exist in Google Drive.
