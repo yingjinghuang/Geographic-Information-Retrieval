@@ -18,8 +18,8 @@ const course = {
   schedule: [
     ['Oct 6',  'Oct 9',  'Introduction', '', false],
     ['Oct 13', 'Oct 16', 'Geoparsing I', 'Zilong', false],
-    ['Oct 20', 'Oct 23', 'Geoparsing II + <span class="schedule-accent">Quiz (Save the date!)</span>', 'Zilong', false],
-    ['Oct 27', 'Nov 13', 'Geocoding I', 'Zilong', false],
+    ['Oct 20', 'Oct 23', 'Geoparsing II', 'Zilong', false],
+    ['Oct 27', 'Nov 13', 'Geocoding I + <span class="schedule-accent">Quiz (Save the date!)</span>', 'Zilong', false],
     ['Nov 03', 'Nov 20', 'Geocoding II', 'Zilong', false],
     ['Nov 10', 'Nov 27', 'Midterm exam (Save the date!)', '', true],
     ['Nov 17', 'Dec 4',  'Text Indexing', 'Yingjing', false],
