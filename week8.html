@@ -1,1 +1,61 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Week 8 · GIR 2026W</title><link rel="stylesheet" href="style.css"></head><body data-week="8"><main class="main"><div class="content"><header class="hero"><h1>Week 8: Spatial Indexing</h1><p>R-tree and spatial queries</p></header><h2>Week Content</h2><div class="callout"><strong>To be updated.</strong> Detailed topics, materials, and lab instructions for this week will be published later.</div><footer class="footer"></footer></div></main><script src="script.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="We turn geographic queries into text and spatial conditions, compare direct distance search, bounding-box filtering and R-tree spatial indexing, and begin the final-project proposal.">
+  <title>Week 8: Spatial Indexing &middot; GIR 2026W</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-week="8">
+  <main class="main">
+    <div class="content">
+      <header class="hero">
+        <h1>Week 8: Spatial Indexing</h1>
+        <p>How can spatial queries avoid checking every point?</p>
+      </header>
+
+      <h2>Week Content</h2>
+      <p>We start from a geographic query and build the spatial-search workflow step by step, from exact distance checks to a reusable R-tree spatial index.</p>
+      <ul>
+        <li>Separating a query into text and spatial conditions</li>
+        <li>Direct distance search and exact within-radius filtering</li>
+        <li>Bounding-box candidate filtering</li>
+        <li>R-tree hierarchy, bounding boxes and STR grouping</li>
+        <li>GeoPandas <code>.sindex</code> and reusing one index across repeated queries</li>
+      </ul>
+
+      <h2>Materials</h2>
+      <div>
+        <a class="resource" href="slides/Lecture%208%20-%20Spatial%20Indexing%20-%20GIR%20-%202026.pdf">Lecture slides - PDF</a>
+        <a class="resource" href="code/week8/Week8_spatial_indexing_lab.ipynb" download="lab8_firstName_lastName_gir_2026.ipynb">Lab notebook - IPYNB</a>
+        <a class="resource" href="final-project.html">Final project and proposal details</a>
+      </div>
+
+      <h2>Lab</h2>
+      <p><strong>Part A - Guided:</strong> repeat the six-document <em>castles near Vienna</em> example from the lecture. You will apply the text condition, direct distance search, bounding-box filtering and a GeoPandas spatial index.</p>
+      <p><strong>Part B - Independent:</strong> apply the same workflow to 80 supplied Vienna POIs for the query <em>caf&eacute;s near the query point</em>. Start with a 500 m radius, then change it to 750 m while reusing the same spatial index. Each task points you back to the relevant Guided section for a hint.</p>
+      <p><strong>Part C - Interpretation:</strong> answer three short questions using your own Part B outputs. Focus on the candidate count, exact spatial matches, final caf&eacute; matches, and what changes when the radius increases.</p>
+      <p>All data needed for the lab are included in the notebook. The optional visualization cells are for understanding only and are not required for submission.</p>
+
+      <h2>Final Project Workshop</h2>
+      <p>The second part of the class starts the final project. Teams develop an idea, exchange peer feedback and finish with a revised plan and clear next tasks.</p>
+      <ul>
+        <li><strong>Project directions:</strong> system design, a specific GIR technique, spatial analysis, or evaluation. These directions can overlap.</li>
+        <li><strong>Proposal:</strong> one 1-2 page team proposal before your Week 9 class. The proposal is worth 15% of the course grade.</li>
+        <li><strong>Proposal sections:</strong> Project Aim and Context; Data and Materials; Proposed Approach and Analysis; Expected Outcomes; Work Plan and Feasibility.</li>
+        <li><strong>Final project:</strong> worth 30%. The team presents in Week 11, every member speaks, and the final materials include slides, code and data.</li>
+      </ul>
+
+      <h2>Lab Checkpoint</h2>
+      <div class="callout">
+        <strong>Submit your Week 8 notebook to Moodle.</strong>
+        <p>Keep the visible outputs from Guided Part A, your completed Part B code and outputs, and the three short Part C answers. Restart the kernel and run the required sections from top to bottom before saving. If the project workshop means you do not finish every Part B task during class, submit the version that shows your progress for the attendance checkpoint and continue the practice afterwards.</p>
+      </div>
+
+      <footer class="footer">Geographic Information Retrieval &middot; University of Vienna &middot; 2026W</footer>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -10,7 +10,7 @@ const course = {
     ['Geocoding II', 'How can language models use context to locate places?', 'Part I · Text → Places', 'Coordinates + contextual explanations', 'Nov 20'],
     ['Midterm Exam', 'Assessment of Lectures and Labs 2–5', 'Assessment', 'Midterm exam', 'Nov 27'],
     ['Text Indexing', 'How can documents be searched efficiently?', 'Part II · Places → Search', 'Boolean retrieval + phrase search', 'Dec 4'],
-    ['Spatial Indexing', 'How can geometries be searched efficiently?', 'Part II · Places → Search', 'Spatial index + verified queries', 'Dec 11'],
+    ['Spatial Indexing', 'How can spatial queries avoid checking every point?', 'Part II · Places → Search', 'Direct distance + bounding boxes + R-tree', 'Dec 11'],
     ['Textual Ranking', 'How can matching documents be ranked by text relevance?', 'Part II · Places → Search', 'TF-IDF + cosine ranking', 'Dec 18'],
     ['Spatial and Hybrid Ranking', 'How should text and space jointly determine ranking?', 'Part II · Places → Search', 'Scores + sensitivity analysis', 'Jan 8'],
     ['Final Project Presentation', 'How does the complete GIR workflow perform?', 'Assessment', 'Team presentation', 'Jan 15']
@@ -23,7 +23,7 @@ const course = {
     ['Nov 03', 'Nov 20', 'Geocoding II', 'Zilong', false],
     ['Nov 10', 'Nov 27', 'Midterm exam (Save the date!)', '', true],
     ['Nov 17', 'Dec 4',  'Text Indexing', 'Yingjing', false],
-    ['Nov 24', 'Dec 11', 'Spatial Indexing + <span class="schedule-accent">Project proposal (Save the date!)</span>', 'Yingjing', false],
+    ['Nov 24', 'Dec 11', 'Spatial Indexing + <span class="schedule-accent">Project workshop</span>', 'Yingjing', false],
     ['Dec 01', 'Dec 18', 'Textual Ranking', 'Yingjing', false],
     ['Dec 15', 'Jan 8',  'Spatial and Hybrid Ranking', 'Yingjing', false],
     ['Jan 12', 'Jan 15', 'Final project presentation (Save the date!)', '', true]
